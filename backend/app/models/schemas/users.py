@@ -29,3 +29,7 @@ class UserWithToken(User):
 
 class UserInResponse(RWSchema):
     user: UserWithToken
+
+
+class UserVerified():
+    is_verified = models.BooleanField(default=False)
